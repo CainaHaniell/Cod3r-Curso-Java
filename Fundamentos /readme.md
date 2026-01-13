@@ -8,7 +8,7 @@ Aqui estão os primeiros passos com Java, entendendo como o código funciona e c
 * **Conclusão:** 
 * **Aulas Abordadas:** 0 a 50
 * **Exercícios / Desafios:** 0 a 6
-
+  
 ---
 ## 📘 Conteúdos Estudados
 Nesta etapa inicial, os estudos estão focados nos conceitos básicos da linguagem Java, incluindo:
