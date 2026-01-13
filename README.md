@@ -39,4 +39,3 @@ O cronograma segue a metodologia do Professor Leonardo Moura Leitao, dividida no
   https://www.udemy.com/course/fundamentos-de-programacao-com-java/
 
 
-java NomeDoArquivo
