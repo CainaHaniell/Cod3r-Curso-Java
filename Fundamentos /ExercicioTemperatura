@@ -1,0 +1,18 @@
+package Fundamentos;
+
+public class ExercicioTemperatura {
+	public static void main (String[] args) {
+		
+//		(F - 32) x 5/9 = C
+		
+		int numero = 10;
+		
+		int F = 32;
+		double divisao = 5/9.0;
+		
+		double operacao = (numero - F) * divisao;
+	
+		System.out.println(operacao	);
+	}
+	
+}
