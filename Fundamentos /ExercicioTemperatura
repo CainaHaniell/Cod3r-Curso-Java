@@ -5,14 +5,14 @@ public class ExercicioTemperatura {
 		
 //		(F - 32) x 5/9 = C
 		
-		int numero = 10;
+		int Fahrenheirt = 86;
 		
 		int F = 32;
 		double divisao = 5/9.0;
 		
-		double operacao = (numero - F) * divisao;
+		double celcius = (Fahrenheirt - F) * divisao;
 	
-		System.out.println(operacao	);
+		System.out.println(" O resultado é "  +"Cº " + celcius 	);
 	}
 	
 }
