@@ -1,0 +1,27 @@
+package Fundamentos;
+
+public class TiposPrimitivos {
+	public static void main(String[] args) {
+		
+//		Informação do funcionario
+	
+//		Tipos numericos inteirio
+		byte anosDeEmpresa = 23;
+		short numeroDeVoos = 542;
+		int id = 566789;
+		long pontosAcomulados = 3_234_845_223L;
+		
+//		Tipos numéricos reais
+		float salario = 11_445_44F;
+		double vendasAcomuladas = 2_991_123_321.01;
+		
+//		Tipos Booleano
+		boolean estaDeFerias = false; // true
+		
+//		Tipo Caractere
+		char status = 'A';
+		
+//			Dias de empresa
+		System.out.println(anosDeEmpresa * 365);
+	}
+}
