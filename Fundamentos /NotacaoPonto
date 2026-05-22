@@ -1,0 +1,23 @@
+
+
+package Fundamentos;
+
+public class NotacaoPonto {
+	public static void main(String[] args) {
+		
+//		Uma variavel do chamada (s) do tipo String, guardando o texto (Bom dia)
+		String s = "Bom dia";
+		s = s.replace("x", "Senhoora");
+		s = s.toUpperCase();
+		
+		
+		System.out.println(s);
+		
+		String y =  "Bom dia x".replace("dia", "Gui" ).toUpperCase().concat("!!!!");
+//		.replace (X,x) troca partes do texto
+		
+		System.out.println(y);
+		
+		
+	}
+}
