@@ -7,7 +7,7 @@ Aqui estão os primeiros passos com Java, entendendo como o código funciona e c
 * **Início:** 20/05/2026
 * **Conclusão:** 
 * **Aulas Abordadas:** 0 a 50
-* **Exercícios / Desafios:** 0 a 6
+* **Exercícios / Desafios:** 0 a 7
   
 ---
 ## 📘 Conteúdos Estudados
