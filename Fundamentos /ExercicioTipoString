@@ -1,0 +1,23 @@
+package Fundamentos;
+
+public class ExercicioTipoString {
+	public static void main(String[] args) {
+		var nome = "Cainã Haniel";
+		var idade = 19;
+		var curso = "Informatica";
+		var notaFinal = 8.5;
+
+		System.out.println("Qual a primeira letra: " + nome.charAt(0));
+		System.out.println("Nome em maiusculo: " + nome.toUpperCase());
+		System.out.println("O curso começa com info? " + curso.startsWith("Info"));
+		System.out.println("Quantos caracteres o curso possui: " + curso.length());
+
+		System.out.println("");
+		System.out.printf(""
+				+ "Aluno: %s\nIdade: %d\nCurso: %s\nNota Final: %.1f", 
+				nome, 
+				idade, 
+				curso,
+				notaFinal);
+	}
+}
