@@ -1,0 +1,42 @@
+package Fundamentos;
+
+public class TipoString{
+	
+	public static void main(String[] args) {
+		System.out.println("Hello guys".charAt(1)); //Pega um caractere pelo índice.
+		
+		String s = "Boa tarde";
+		System.out.println(s.concat("!!!")); //Junta textos.
+		
+		System.out.println(s.startsWith("Boa")); //Verifica se a frase começa com determinado texto
+		
+		System.out.println(s.toUpperCase()); // Deixa a letra minuscula em maiuscula
+		
+		System.out.println(s.endsWith("tarde")); //Verifica se termina com determinado texto
+		
+		System.out.println(s.length()); //total de caracteres
+		
+		System.out.println(s.equals("boa tarde")); // Comparação de igualdade FALSO POIS NÃO É IGUAL
+		
+		System.out.println(s.equalsIgnoreCase("boa TaRde")); //Compara textos ignorando letras maiúsculas e minúsculas.
+		//-----------------------------------------------------																																																																																																						
+		System.out.println("");
+		//O Java identifica automaticamente o tipo da variável.
+		var nome = "Pedro";
+		var sobrenome = "Santos";
+		var idade = 12;
+		var salario = 1821.81;
+		/*
+		 * %s String
+		 * %d Tipo inteiro
+		 * %f Tipo flutuante*/
+		
+		System.out.println("nome: " + nome + "\nsobrenome: " +
+		sobrenome + "\nidade: " + idade + "\nSalario: " + salario +"\n\n");
+		
+//		                               %.2f Determina quantas casas decimais quer colocar 
+		System.out.printf("O senhor %s %s tem %d e ganha R$ %.2f ", nome, sobrenome, idade, salario);
+		
+		
+	}
+}
