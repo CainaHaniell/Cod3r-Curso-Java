@@ -1,0 +1,23 @@
+package Fundamentos;
+
+public class PrimitivoVsObjeto {
+	public static void main(String[] args) {
+
+		String s = new String("Texto");
+		s.toUpperCase();
+
+		int a = 123;
+		System.out.println(a);
+	}
+}
+
+// Objetos possuem métodos e são criados a partir de classes.
+// Tipos primitivos armazenam valores simples diretamente na memória.
+
+// String é objeto:
+/// String nome = "Joao";
+
+// int é primitivo:
+/// int idade = 19;
+
+// Em Java, quase tudo é objeto, exceto os 8 tipos primitivos.
