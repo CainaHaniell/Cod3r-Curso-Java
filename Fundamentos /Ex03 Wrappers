@@ -1,0 +1,35 @@
+package Fundamentos;
+
+public class WrapperExercicio {
+	public static void main(String[] args) {
+
+		// Exercicio 1
+		Integer idade = (19);
+
+		System.out.println(idade);
+
+		// Eu guardei o valor da variavel, transformando em Wrapper e depois imprimir
+		// --------------------------------------------
+
+		// Exercicio 2
+		Integer text = Integer.parseInt("20");
+
+		System.out.println(text + 10);
+
+		/*
+		 * O metodo parseInt(); pega tipos String e converte em tipos inteiro
+		 */
+
+		// EXERCICIO 3
+
+		/*
+		 * Oque é Wrapper? Wrapper é uma classe que representa um tipo primitivo como um
+		 * objeto.
+		 *
+		 * Qual a diferença entre int e Integer? 
+		 * Int -> não pode se usar metodos já que não é objeto. 
+		 * Integer -> é um objeto Wrapper do tipo int. Por ser objeto possui métodos.
+		 */
+
+	}
+}
