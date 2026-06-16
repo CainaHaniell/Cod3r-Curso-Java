@@ -1,0 +1,35 @@
+package Fundamentos;
+
+import java.util.Scanner;
+
+public class Aula11ConversaoStringNumerico {
+	
+	public static void main(String[] args) {
+		Scanner s1 = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro número:");
+		String valor1 = s1.nextLine();
+		
+		System.out.println("Digite o segundo número:");
+		String valor2 = s1.nextLine();
+		
+		System.out.println(valor1 + valor2); //Concatenação, Juntar as string
+		
+		double numero1 = Double.parseDouble(valor1);
+		double numero2 = Double.parseDouble(valor2);
+		
+		double resultado = numero1 + numero2;
+		System.out.println("A soma é: " + resultado);
+		System.out.println("A média é: " + resultado / 2);
+		
+		System.out.println("");
+		//INTEIRO
+		int num1 = Integer.parseInt(valor1);
+		int num2 = Integer.parseInt(valor2);
+		
+		int soma = num1 + num2;
+		System.out.println("A soma é: " + soma);
+		System.out.println("A média é: " + soma /2);
+		
+	}
+}
