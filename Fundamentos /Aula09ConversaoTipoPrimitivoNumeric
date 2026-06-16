@@ -1,0 +1,38 @@
+package Fundamentos;
+
+public class ConversaoTipoPrimitivoNumerico {
+	
+	public static void main(String []args) {
+		
+		double a = 1; //Implicita
+		System.out.println(a);
+		
+		float b = (float) 1.12345;//Explicita (CAST)
+		System.out.println(b);
+		
+		int c= 280;
+		byte d = (byte) c; //Explicita (CAST)
+		System.out.println(d);
+		
+		double e = 1.33333;
+		int f = (int) e;
+		
+		System.out.println(f);
+		
+		//-----------------------------------------------
+		
+		double q = 10;
+	
+		System.out.println(q);
+		
+		double w = 15.8;
+		int ew = (int) w;
+		
+		System.out.println(ew);
+		
+		
+		
+		
+	
+	}
+}
