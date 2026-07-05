@@ -1,0 +1,34 @@
+package Fundamentos;
+
+public class Ex05Aritmeticos {
+	public static void main(String[] args) {
+
+		int numA = (int) Math.pow(6 * (3 + 2), 2);
+		int denA = 3 * 2;
+
+		int SuperiorA = numA / denA;
+		System.out.println(SuperiorA);
+		System.out.println(" ");
+
+		// -=--------------
+		int numB = (1 - 5) * (2 - 7);
+		int denB = 2;
+		
+	
+		
+ 		int SuperiorB = (int) Math.pow(numB / denB, 2);
+ 		
+ 		
+ 		int superior = (int) Math.pow(SuperiorA - SuperiorB,3);
+ 		int inferior = (int) Math.pow(10, 3);
+ 		
+ 		int resultado1 = superior / inferior;
+ 		
+ 		System.out.println(resultado1);
+ 		
+ 		String nome = "Oi";
+ 		
+
+
+	}
+}
