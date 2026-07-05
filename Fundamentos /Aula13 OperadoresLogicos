@@ -1,0 +1,31 @@
+package Fundamentos;
+
+public class Aula13OperadoresLogicos {
+	public static void main(String[] args) {
+
+		boolean condicao1 = true;
+		boolean condicao2 = 3 > 7;
+
+		System.out.println("\nTabela Verdade E (and) \n");
+		System.out.println(true && true);
+		System.out.println(true && false);
+		System.out.println(false && true);
+		System.out.println(false && false);
+
+		System.out.println("\nTabela Verdade OU (OR) \n");
+		System.out.println(true && true);
+		System.out.println(true && false);
+		System.out.println(false && true);
+		System.out.println(false && false);
+
+		System.out.println("\nTabela Verdade OU Exclusivo (XOR) \n");
+		System.out.println(true ^ true);
+		System.out.println(true ^ false);
+		System.out.println(false ^ true);
+		System.out.println(false ^ false);
+		// Só pode escolher 1, nao pode escolher falso e falso, e nem verdadeiro e
+		// verdadeiro.
+		// É como se fosse, escolha Um Carro (True) ou Moto (False)
+
+	}
+}
