@@ -1,0 +1,25 @@
+package Fundamentos;
+
+public class Ex06DesafioLogicos {
+	public static void main(String[] args) {
+		//Tabalho na terça (V ou F)
+		//Trabalho na quinta ( V ou F)
+		
+		boolean trabalho1 = false;
+		boolean trabalho2 = false;
+		//Operadores binarios
+		boolean comproutv50 = trabalho1 && trabalho2;
+		boolean comproutv32 = trabalho1 ^ trabalho2;
+		boolean comprouSoverte = trabalho1 || trabalho2;
+		System.out.println("Comprou Tv 50? " + comproutv50);
+		
+		System.out.println("Comprou Tv 32? " + comproutv32);
+		System.out.println("Comprou Sorvete?  " + comprouSoverte);
+		//Operador unario
+		boolean maisSaudavel = !comprouSoverte;
+		System.out.println("Mais saudavel? " + maisSaudavel );
+
+		
+		
+	}
+}
