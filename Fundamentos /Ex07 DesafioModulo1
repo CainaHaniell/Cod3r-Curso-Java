@@ -1,0 +1,30 @@
+package Fundamentos;
+
+import java.util.Scanner;
+
+public class Ex07DesafioModulo1 {
+	public static void main(String[] args) {
+		Scanner s1 = new Scanner (System.in);
+
+		//Ler num 1
+		//Ler num 2
+		//Operacao: +, -, *, / e %
+		
+		
+		System.out.print ("Digite um numero: ");
+		double Num1 = s1.nextDouble();
+		System.out.print("Digite o segundo numero: ");
+		double Num2 = s1.nextDouble();
+		System.out.print("Digite a operação que deseja:  ");
+		String operacao = s1.next();
+		
+		//lÓGICA
+		double resultado = "+".equals(operacao) ? Num1 + Num2 : 0;
+		resultado = "-".equals(operacao) ? Num1 - Num2 : resultado;
+		resultado = "*".equals(operacao) ? Num1 * Num2 : resultado;
+		resultado = "/".equals(operacao) ? Num1 / Num2 : resultado;
+		 resultado = "%".equals(operacao) ? Num1 % Num2 : resultado;
+
+ 	System.out.printf("%.1f %s %.1f = %.1f", Num1, operacao, Num2, resultado);
+	}
+}
