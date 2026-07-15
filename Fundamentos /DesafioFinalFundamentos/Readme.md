@@ -1,27 +1,31 @@
 # 💳 Sistema de Simulação Financeira
 
-> Projeto desenvolvido para praticar os fundamentos do curso na linguagem java
-
-## 📖 Sobre o projeto
-
-O **Sistema de Simulação Financeira** é um projeto criado com o objetivo de consolidar os principais conceitos estudados nos módulos iniciais do curso.
-
-O sistema simula uma compra realizada por um cliente em uma loja. Durante a execução, o usuário informa seus dados e as informações da compra. O programa realiza conversões de tipos, cálculos financeiros, comparações e exibe um relatório organizado com os resultados.
-
-Este projeto foi desenvolvido utilizando **apenas os conteúdos básicos da linguagem Java**, sem estruturas de decisão (`if/else`), laços de repetição (`for`, `while`), métodos próprios ou Programação Orientada a Objetos (POO).
+> Projeto desenvolvido durante os estudos de Java com o objetivo de praticar e consolidar os principais conceitos da linguagem através da criação de uma aplicação de console.
 
 ---
 
-# 🎯 Objetivos
+# 📖 Sobre o projeto
 
-Este projeto tem como finalidade praticar:
+O **Sistema de Simulação Financeira** simula uma compra realizada por um cliente em uma loja.
 
-* Declaração de variáveis e constantes
+Durante a execução, o usuário informa seus dados pessoais e as informações da compra. O sistema realiza conversões de tipos, manipula Strings, executa cálculos financeiros, utiliza diferentes operadores da linguagem Java e apresenta um relatório completo no final da execução.
+
+Este projeto foi desenvolvido utilizando **apenas os conteúdos estudados na primeira etapa do curso**, sem o uso de estruturas condicionais (`if/else`), laços de repetição (`for`, `while`), métodos próprios ou Programação Orientada a Objetos (POO).
+
+O principal objetivo é demonstrar domínio dos fundamentos da linguagem Java por meio de um projeto prático e organizado.
+
+---
+
+# 🎯 Objetivos do projeto
+
+Este projeto foi criado para praticar:
+
+* Declaração de variáveis e constantes (`final`)
 * Inferência de tipos (`var`)
 * Tipos primitivos
 * Wrappers (`Integer`, `Double`, etc.)
-* Conversão entre tipos primitivos (Casting)
-* Conversão entre String e números
+* Conversões entre tipos primitivos (Casting)
+* Conversões entre String e números
 * Entrada de dados com `Scanner`
 * Manipulação de Strings
 * Operadores aritméticos
@@ -37,17 +41,170 @@ Este projeto tem como finalidade praticar:
 
 # ⚙️ Funcionalidades
 
-O sistema é capaz de:
+O sistema permite:
 
-* Cadastrar as informações do cliente.
-* Receber dados da compra.
-* Converter textos em valores numéricos.
-* Converter números em texto.
-* Realizar cálculos financeiros.
-* Trabalhar com diferentes operadores da linguagem.
-* Manipular informações utilizando métodos da classe `String`.
-* Comparar textos corretamente utilizando `equals()` e `equalsIgnoreCase()`.
-* Exibir um relatório organizado contendo todas as informações da simulação.
+* Cadastrar os dados do cliente.
+* Registrar informações da compra.
+* Converter dados entre diferentes tipos.
+* Manipular textos utilizando métodos da classe `String`.
+* Calcular subtotal, taxas, descontos e valor final da compra.
+* Calcular o saldo restante do cliente após a compra.
+* Realizar comparações utilizando operadores relacionais.
+* Criar expressões utilizando operadores lógicos.
+* Gerar mensagens através do operador ternário.
+* Exibir um relatório organizado no console.
+
+---
+
+# 🔄 Fluxo de funcionamento
+
+O programa segue a seguinte sequência:
+
+### 1. Cadastro do cliente
+
+O usuário informa:
+
+* Nome completo
+* Idade
+* Salário
+* Valor do produto
+* Quantidade de produtos
+* Cliente Premium (SIM ou NÃO)
+
+> Todos os valores numéricos são digitados inicialmente como **String**.
+
+---
+
+### 2. Conversão dos dados
+
+O sistema converte os valores para seus respectivos tipos utilizando Wrappers.
+
+Exemplos:
+
+* `String → int`
+* `String → double`
+* `int → String`
+* `double → int` (Casting)
+
+---
+
+### 3. Manipulação de Strings
+
+São realizadas diversas operações com o nome informado pelo usuário, como:
+
+* Quantidade de caracteres
+* Nome em maiúsculo
+* Nome em minúsculo
+* Primeira letra
+* Última letra
+
+Além disso, é feita a comparação correta utilizando `equals()` e `equalsIgnoreCase()`.
+
+---
+
+### 4. Cálculos financeiros
+
+O sistema calcula:
+
+* Valor total da compra
+* Taxas
+* Descontos
+* Total final
+* Saldo restante
+
+---
+
+### 5. Operadores
+
+Durante o desenvolvimento são utilizados diversos operadores da linguagem:
+
+* Aritméticos
+* Relacionais
+* Lógicos
+* Unários
+* Atribuição
+* Ternário
+
+Todos aplicados em situações semelhantes às encontradas em sistemas reais.
+
+---
+
+### 6. Relatório Final
+
+Ao finalizar todos os cálculos, o programa apresenta um relatório completo contendo todas as informações processadas.
+
+---
+
+# 📄 Exemplo do relatório
+
+```text
+==================================================
+             RELATÓRIO DA COMPRA
+==================================================
+
+DADOS DO CLIENTE
+
+Nome:
+Idade:
+Cliente Premium:
+
+--------------------------------------------------
+
+DADOS DA COMPRA
+
+Valor do produto:
+Quantidade:
+Subtotal:
+Taxa:
+Desconto:
+Total da compra:
+
+--------------------------------------------------
+
+SITUAÇÃO FINANCEIRA
+
+Salário:
+Saldo restante:
+
+--------------------------------------------------
+
+INFORMAÇÕES DA STRING
+
+Quantidade de caracteres:
+Nome em maiúsculo:
+Nome em minúsculo:
+Primeira letra:
+Última letra:
+
+--------------------------------------------------
+
+TESTES RELACIONAIS
+
+Cliente é maior de idade:
+Compra é maior que o salário:
+Quantidade é diferente de zero:
+Salário é igual ao valor da compra:
+
+--------------------------------------------------
+
+TESTES LÓGICOS
+
+Cliente é maior de idade e Premium:
+Cliente é Premium ou possui saldo suficiente:
+Cliente não é Premium:
+Cliente possui saldo suficiente e compra válida:
+Cliente é maior de idade ou compra pequena:
+
+--------------------------------------------------
+
+OPERADOR TERNÁRIO
+
+Categoria do cliente:
+Situação da compra:
+Maioridade:
+
+==================================================
+```
 
 ---
 
@@ -61,17 +218,14 @@ O sistema é capaz de:
 
 # 📚 Conceitos praticados
 
-Durante o desenvolvimento deste projeto foram utilizados os seguintes conceitos da linguagem Java:
-
 ## Fundamentos
 
 * Variáveis
-* Constantes (`final`)
-* Inferência de tipos (`var`)
+* Constantes
+* Inferência de tipos
 * Tipos primitivos
-* Organização do código
 
-## Entrada e saída de dados
+## Entrada e saída
 
 * Scanner
 * Console
@@ -80,7 +234,7 @@ Durante o desenvolvimento deste projeto foram utilizados os seguintes conceitos 
 
 * Métodos da classe `String`
 * Comparação de Strings
-* Conversões entre texto e números
+* Conversão entre texto e números
 
 ## Conversões
 
@@ -106,9 +260,11 @@ Durante o desenvolvimento deste projeto foram utilizados os seguintes conceitos 
 ```text
 SistemaFinanceiro/
 │
-└── src/
-    └── desafiofinal/
-        └── SistemaFinanceiro.java
+├── src/
+│   └── desafiofinal/
+│       └── SistemaFinanceiro.java
+│
+└── README.md
 ```
 
 ---
@@ -119,19 +275,26 @@ SistemaFinanceiro/
 2. Abra o projeto na IDE de sua preferência.
 3. Execute a classe `SistemaFinanceiro`.
 4. Informe os dados solicitados pelo programa.
-5. Visualize o relatório gerado no console.
+5. Ao final da execução, visualize o relatório completo gerado no console.
 
 ---
 
 # 🎓 Objetivo educacional
 
-Este projeto foi desenvolvido como um desafio prático para consolidar os conhecimentos adquiridos durante os estudos do curso de JAVA.
+Este projeto faz parte da minha jornada de aprendizado em Java.
 
-O foco principal é fortalecer a lógica de programação e compreender como os principais recursos da linguagem funcionam na prática antes do estudo de estruturas condicionais, laços de repetição e Programação Orientada a Objetos.
+Seu objetivo é aplicar, na prática, todos os conceitos estudados nos módulos iniciais do curso, desenvolvendo um sistema organizado e próximo de um cenário real, fortalecendo a base necessária para os próximos conteúdos, como estruturas condicionais, laços de repetição e Programação Orientada a Objetos.
 
 ---
 
-# 📌Curso Base:
+# 📌 Curso Base
+
+**Fundamentos de Programação com Java**
+
 https://www.udemy.com/course/fundamentos-de-programacao-com-java/
 
+---
 
+## 👨‍💻 Autor
+
+Desenvolvido por **Cainã Haniel** como parte dos estudos em Java.
