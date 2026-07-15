@@ -1,10 +1,10 @@
 # 💳 Sistema de Simulação Financeira
 
-> Projeto desenvolvido para praticar os fundamentos da linguagem Java.
+> Projeto desenvolvido para praticar os fundamentos do curso na linguagem java
 
 ## 📖 Sobre o projeto
 
-O **Sistema de Simulação Financeira** é um projeto criado com o objetivo de consolidar os principais conceitos estudados nos módulos iniciais de Java.
+O **Sistema de Simulação Financeira** é um projeto criado com o objetivo de consolidar os principais conceitos estudados nos módulos iniciais do curso.
 
 O sistema simula uma compra realizada por um cliente em uma loja. Durante a execução, o usuário informa seus dados e as informações da compra. O programa realiza conversões de tipos, cálculos financeiros, comparações e exibe um relatório organizado com os resultados.
 
@@ -125,12 +125,13 @@ SistemaFinanceiro/
 
 # 🎓 Objetivo educacional
 
-Este projeto foi desenvolvido como um desafio prático para consolidar os conhecimentos adquiridos durante os estudos de Fundamentos da linguagem Java.
+Este projeto foi desenvolvido como um desafio prático para consolidar os conhecimentos adquiridos durante os estudos do curso de JAVA.
 
 O foco principal é fortalecer a lógica de programação e compreender como os principais recursos da linguagem funcionam na prática antes do estudo de estruturas condicionais, laços de repetição e Programação Orientada a Objetos.
 
 ---
 
-# 📌 Status
+# 📌Curso Base:
+https://www.udemy.com/course/fundamentos-de-programacao-com-java/
 
-✅ Projeto em desenvolvimento.
+
