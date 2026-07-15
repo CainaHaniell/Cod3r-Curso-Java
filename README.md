@@ -34,7 +34,7 @@ O cronograma segue a metodologia do Professor Leonardo Moura Leitao, dividida no
 
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagem:** Java 21
-- **IDE:** IntelliJ IDEA ou VS Code
+- **IDE:** Eclipse
 - **Curso Base:**  
   https://www.udemy.com/course/fundamentos-de-programacao-com-java/
 
