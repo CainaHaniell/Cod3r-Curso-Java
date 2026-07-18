@@ -1,283 +1,239 @@
-# 💳 Sistema de Simulação Financeira
+# 📊 Painel de Desempenho Acadêmico
 
 > Projeto desenvolvido durante os estudos de Java com o objetivo de praticar e consolidar os principais conceitos da linguagem através da criação de uma aplicação de console.
 
 ---
 
-# 📖 Sobre o projeto
+## 📖 Sobre o projeto
 
-O **Sistema de Simulação Financeira** simula uma compra realizada por um cliente em uma loja.
+O **Painel de Desempenho Acadêmico** é uma aplicação de console desenvolvida para praticar os principais fundamentos da linguagem Java.
 
-Durante a execução, o usuário informa seus dados pessoais e as informações da compra. O sistema realiza conversões de tipos, manipula Strings, executa cálculos financeiros, utiliza diferentes operadores da linguagem Java e apresenta um relatório completo no final da execução.
+O sistema simula o acompanhamento do desempenho de um estudante, permitindo cadastrar informações acadêmicas, realizar conversões de tipos, efetuar cálculos, manipular Strings, gerar indicadores e apresentar um relatório organizado ao final da execução.
 
-Este projeto foi desenvolvido utilizando **apenas os conteúdos estudados na primeira etapa do curso**, sem o uso de estruturas condicionais (`if/else`), laços de repetição (`for`, `while`), métodos próprios ou Programação Orientada a Objetos (POO).
-
-O principal objetivo é demonstrar domínio dos fundamentos da linguagem Java por meio de um projeto prático e organizado.
+O projeto foi desenvolvido utilizando apenas os conteúdos estudados nos módulos iniciais do curso, sem estruturas condicionais (`if/else`), laços de repetição (`for`, `while`), métodos próprios ou Programação Orientada a Objetos (POO).
 
 ---
 
-# 🎯 Objetivos do projeto
+## 🎯 Objetivo
 
-Este projeto foi criado para praticar:
+Este projeto tem como objetivo praticar os principais fundamentos da linguagem Java estudados até o momento, aplicando-os em um sistema de console semelhante a uma aplicação real.
 
-* Declaração de variáveis e constantes (`final`)
-* Inferência de tipos (`var`)
-* Tipos primitivos
-* Wrappers (`Integer`, `Double`, etc.)
-* Conversões entre tipos primitivos (Casting)
-* Conversões entre String e números
-* Entrada de dados com `Scanner`
-* Manipulação de Strings
-* Operadores aritméticos
-* Operadores relacionais
-* Operadores lógicos
-* Operadores unários
-* Operadores de atribuição
-* Operador ternário
-* Precedência dos operadores
-* Organização e legibilidade do código
+Durante o desenvolvimento são utilizados conceitos como:
 
----
-
-# ⚙️ Funcionalidades
-
-O sistema permite:
-
-* Cadastrar os dados do cliente.
-* Registrar informações da compra.
-* Converter dados entre diferentes tipos.
-* Manipular textos utilizando métodos da classe `String`.
-* Calcular subtotal, taxas, descontos e valor final da compra.
-* Calcular o saldo restante do cliente após a compra.
-* Realizar comparações utilizando operadores relacionais.
-* Criar expressões utilizando operadores lógicos.
-* Gerar mensagens através do operador ternário.
-* Exibir um relatório organizado no console.
+- Variáveis e constantes
+- Tipos primitivos
+- Wrappers
+- Conversões entre tipos
+- Scanner
+- Manipulação de Strings
+- Operadores aritméticos
+- Operadores relacionais
+- Operadores lógicos
+- Operadores unários
+- Operadores de atribuição
+- Operador ternário
+- Organização e legibilidade do código
 
 ---
 
-# 🔄 Fluxo de funcionamento
+## 1️⃣ Cadastro do estudante
 
-O programa segue a seguinte sequência:
+Inicialmente, o sistema solicitará ao usuário as seguintes informações:
 
-### 1. Cadastro do cliente
-
-O usuário informa:
+### 👤 Dados pessoais
 
 * Nome completo
+* Curso
 * Idade
-* Salário
-* Valor do produto
-* Quantidade de produtos
-* Cliente Premium (SIM ou NÃO)
 
-> Todos os valores numéricos são digitados inicialmente como **String**.
+### 📚 Informações de estudo
+
+* Horas de estudo por dia
+* Quantidade de matérias
+* Quantidade de exercícios resolvidos
+* Quantidade de vídeos assistidos
+* Nota da última prova
+
+> **Observação:** Todos os valores numéricos serão informados inicialmente como **String** e posteriormente convertidos para seus respectivos tipos utilizando Wrappers.
 
 ---
 
-### 2. Conversão dos dados
+## 2️⃣ Conversão dos dados
 
-O sistema converte os valores para seus respectivos tipos utilizando Wrappers.
+Após receber todas as informações, o sistema realizará as conversões necessárias para permitir os cálculos.
 
-Exemplos:
+Conversões utilizadas:
 
 * `String → int`
 * `String → double`
-* `int → String`
 * `double → int` (Casting)
 
----
-
-### 3. Manipulação de Strings
-
-São realizadas diversas operações com o nome informado pelo usuário, como:
-
-* Quantidade de caracteres
-* Nome em maiúsculo
-* Nome em minúsculo
-* Primeira letra
-* Última letra
-
-Além disso, é feita a comparação correta utilizando `equals()` e `equalsIgnoreCase()`.
+Essas conversões permitirão utilizar corretamente os valores em operações matemáticas.
 
 ---
 
-### 4. Cálculos financeiros
+## 3️⃣ Geração das estatísticas
 
-O sistema calcula:
+Com os dados convertidos, o sistema calculará automaticamente diversas estatísticas.
 
-* Valor total da compra
-* Taxas
-* Descontos
-* Total final
-* Saldo restante
+Serão exibidas as seguintes informações:
 
----
+* Horas de estudo por dia
+* Horas de estudo por semana
+* Horas de estudo por mês
+* Quantidade de matérias
+* Quantidade de exercícios resolvidos
+* Quantidade de vídeos assistidos
+* Nota da última prova
 
-### 5. Operadores
-
-Durante o desenvolvimento são utilizados diversos operadores da linguagem:
-
-* Aritméticos
-* Relacionais
-* Lógicos
-* Unários
-* Atribuição
-* Ternário
-
-Todos aplicados em situações semelhantes às encontradas em sistemas reais.
+Todos esses cálculos serão realizados utilizando operadores aritméticos.
 
 ---
 
-### 6. Relatório Final
+## 4️⃣ Análise das Strings
 
-Ao finalizar todos os cálculos, o programa apresenta um relatório completo contendo todas as informações processadas.
+Após os cálculos, o sistema realizará algumas manipulações utilizando métodos da classe `String`.
+
+Serão exibidas informações como:
+
+* Quantidade de caracteres do nome
+* Quantidade de caracteres do curso
+  
+* Nome em letras maiúsculas
+* Nome em letras minúsculas
+  
+* Curso em letras maiúsculas
+* Curso em letras minúsculas
+  
+* Primeira letra do nome
+* Última letra do nome
 
 ---
 
-# 📄 Exemplo do relatório
+## 5️⃣ Geração dos indicadores
+
+Em seguida, o sistema criará indicadores utilizando operadores relacionais e operadores lógicos.
+
+Alguns exemplos:
+
+* O aluno é maior de idade?
+* Estuda mais de 20 horas por semana?
+* A nota é suficiente para aprovação?
+* Resolveu mais de 50 exercícios?
+* Possui mais de 5 matérias?
+
+Também serão criados indicadores compostos utilizando operadores lógicos (`&&`, `||` e `!`), como:
+
+* Aluno dedicado.
+* Aluno muito ativo.
+* Necessita aumentar os estudos.
+* Possui bom desempenho geral.
+* Cumpriu a meta semanal.
+
+Todos esses indicadores apresentarão valores booleanos (`true` ou `false`).
+
+---
+
+## 6️⃣ Classificação do estudante
+
+Com base nos indicadores gerados, o sistema utilizará o operador ternário para apresentar classificações mais amigáveis ao usuário.
+
+Exemplos:
+
+* Situação acadêmica
+* Nível de dedicação
+* Desempenho geral
+* Meta semanal
+* Categoria do aluno
+
+---
+
+## 7️⃣ Relatório Final
+
+Após concluir todas as etapas anteriores, o sistema exibirá um painel completo contendo todas as informações processadas.
 
 ```text
 ==================================================
-             RELATÓRIO DA COMPRA
+        PAINEL DE DESEMPENHO ACADÊMICO
 ==================================================
 
-DADOS DO CLIENTE
+👤 DADOS DO ALUNO
 
-Nome:
+Nome completo:
+Curso:
 Idade:
-Cliente Premium:
 
 --------------------------------------------------
 
-DADOS DA COMPRA
+📚 ESTATÍSTICAS
 
-Valor do produto:
-Quantidade:
-Subtotal:
-Taxa:
-Desconto:
-Total da compra:
+Horas de estudo por dia:
+Horas de estudo por semana:
+Horas de estudo por mês:
 
---------------------------------------------------
-
-SITUAÇÃO FINANCEIRA
-
-Salário:
-Saldo restante:
+Quantidade de matérias:
+Quantidade de exercícios resolvidos:
+Quantidade de vídeos assistidos:
+Nota da última prova:
 
 --------------------------------------------------
 
-INFORMAÇÕES DA STRING
+📝 ANÁLISE DAS STRINGS
 
-Quantidade de caracteres:
-Nome em maiúsculo:
-Nome em minúsculo:
-Primeira letra:
-Última letra:
+Quantidade de caracteres do nome:
+Quantidade de caracteres do curso:
 
---------------------------------------------------
+Nome em maiúsculas:
+Nome em minúsculas:
 
-TESTES RELACIONAIS
+Curso em maiúsculas:
+Curso em minúsculas:
 
-Cliente é maior de idade:
-Compra é maior que o salário:
-Quantidade é diferente de zero:
-Salário é igual ao valor da compra:
+Primeira letra do nome:
+Última letra do nome:
 
 --------------------------------------------------
 
-TESTES LÓGICOS
+📊 INDICADORES
 
-Cliente é maior de idade e Premium:
-Cliente é Premium ou possui saldo suficiente:
-Cliente não é Premium:
-Cliente possui saldo suficiente e compra válida:
-Cliente é maior de idade ou compra pequena:
+Maior de idade:
+Estuda mais de 20 horas por semana:
+Nota suficiente para aprovação:
+Resolveu mais de 50 exercícios:
+Possui mais de 5 matérias:
+
+Aluno dedicado:
+Aluno muito ativo:
+Necessita aumentar os estudos:
+Possui bom desempenho geral:
+Cumpriu a meta semanal:
 
 --------------------------------------------------
 
-OPERADOR TERNÁRIO
+🏆 CLASSIFICAÇÃO
 
-Categoria do cliente:
-Situação da compra:
-Maioridade:
+Situação acadêmica:
+Nível de dedicação:
+Desempenho geral:
+Meta semanal:
+Categoria do aluno:
 
 ==================================================
 ```
-
----
-
-# 🛠️ Tecnologias utilizadas
-
-* Java
-* Eclipse IDE
-* JDK
-
----
-
-# 📚 Conceitos praticados
-
-## Fundamentos
-
-* Variáveis
-* Constantes
-* Inferência de tipos
-* Tipos primitivos
-
-## Entrada e saída
-
-* Scanner
-* Console
-
-## Strings
-
-* Métodos da classe `String`
-* Comparação de Strings
-* Conversão entre texto e números
-
-## Conversões
-
-* Casting
-* `Integer.parseInt()`
-* `Double.parseDouble()`
-* `Integer.toString()`
-* `String.valueOf()`
-
-## Operadores
-
-* Aritméticos
-* Relacionais
-* Lógicos
-* Unários
-* Atribuição
-* Ternário
-
----
-
-# 📂 Estrutura do projeto
-
-```text
-SistemaFinanceiro/
-│
-├── src/
-│   └── desafiofinal/
-│       └── SistemaFinanceiro.java
-│
-└── README.md
-```
-
----
-
-# 🚀 Como executar
+## 🚀 Como executar
 
 1. Clone este repositório.
-2. Abra o projeto na IDE de sua preferência.
-3. Execute a classe `SistemaFinanceiro`.
-4. Informe os dados solicitados pelo programa.
-5. Ao final da execução, visualize o relatório completo gerado no console.
+2. Abra o projeto no Eclipse ou em outra IDE Java.
+3. Execute a classe principal.
+4. Informe os dados solicitados no console.
+5. Visualize o relatório gerado pelo sistema.
 
----
+## 🛠️ Tecnologias utilizadas
+
+- Java
+- Eclipse IDE
+- JDK
+
 
 # 🎓 Objetivo educacional
 
