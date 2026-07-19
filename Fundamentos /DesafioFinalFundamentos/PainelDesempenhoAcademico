@@ -1,1 +1,106 @@
-..
+package Fundamentos;
+
+import java.util.Scanner;
+
+public class PainelDesempenhoAcademico {
+	public static void main(String[] args) {
+
+		Scanner s1 = new Scanner(System.in);
+
+		System.out.print("Digite seu nome completo: ");
+		String nome = s1.nextLine();
+		System.out.print("\nDigite o nome do seu curso: ");
+		String curso = s1.nextLine().toUpperCase();
+		System.out.print("\nDigite a sua idade: ");
+		String idade = s1.nextLine();
+
+		System.out.print("\nQuantas horas estuda por dia: ");
+		String horasPorDia = s1.nextLine().replace(",", ".");
+		System.out.print("\nQuantas matérias você tem :");
+		String Materias = s1.nextLine();
+		System.out.print("\nQuantos exercicios resolvido você fez: ");
+		String Exercicios = s1.nextLine();
+		System.out.print("\nQuantos vídeo voce assistiu: ");
+		String Videos = s1.nextLine();
+		// Teste para o desempenho do aluno
+
+		System.out.println("\n Prova do aluno: ".toUpperCase());
+		System.out.print("Quanto é 1 + 1 = ");
+		int ContaTeste = s1.nextInt();
+
+
+		// Conversao de tipos
+		int idadeInteiro = Integer.parseInt(idade);
+		double HorasInteiro = Double.parseDouble(horasPorDia);
+		int MateriasEstudo = Integer.parseInt(Materias);
+		int ExerciciosfoiResolvido = Integer.parseInt(Exercicios);
+		int VideosAssistido = Integer.parseInt(Videos);
+		// --------------------
+		// Operadores 
+		String Resultado = ContaTeste == 2 ? "Aluno Aprovado" : "Aluno Reprovado";
+		boolean MaiorIdade = idadeInteiro >= 18;
+		double HorasSemana  = HorasInteiro*7;
+		boolean EstudoSemana = HorasSemana  >= 20;
+		boolean NotaSuficiente = ContaTeste == 2;
+		boolean ExerciciosResolvido = ExerciciosfoiResolvido >= 5;
+		boolean QtdMaterias = MateriasEstudo >= 5;
+		boolean AlunoDedicado = EstudoSemana && ExerciciosResolvido && NotaSuficiente ;
+		boolean AlunoAtivo = EstudoSemana || ExerciciosResolvido || QtdMaterias ;
+		boolean EstudoBaixo = !EstudoSemana || !ExerciciosResolvido;
+		boolean DesempenhoGeral = AlunoDedicado && !EstudoBaixo;
+		String Dedicacao = AlunoDedicado ? "Aluno Dedicado" : "Aluno não Dedicado";
+		
+		
+		System.out.println("\n=======================================");
+		System.out.println("        PAINEL DE DESEMPENHO ACADÊMICO");
+		System.out.println("=======================================");
+
+		System.out.println("Dados do aluno\n");
+		System.out.printf("Nome completo: %s ", nome);
+		System.out.printf("\nCurso: %s ", curso);
+		System.out.printf("\nidade: %d ", idadeInteiro);
+		System.out.printf("\n--------------------------------------------------");
+
+		System.out.println("\nEstatística");
+		System.out.printf("\nHoras de estudo por dia: %.0f %s", HorasInteiro, "Horas");
+		System.out.printf("\nHoras de estudo por semana:  %.0f %s", HorasInteiro * 7, "Horas");
+		System.out.printf("\nHoras de estudo por mês:  %.0f %s", HorasInteiro * 30, "Horas");
+		System.out.println("\n--------------------------------------------------");
+
+		System.out.println("\nQuantidade de matérias: " + MateriasEstudo);
+		System.out.println("Quantidade de Exercicios Resolvidos: " + ExerciciosfoiResolvido);
+		System.out.println("Quantidade de Vídeos Assistidos: " + VideosAssistido);
+		System.out.println("Resultado Academico:  " + Resultado);
+		System.out.println("\n--------------------------------------------------");
+
+		System.out.println("\nAnálise das Strings");
+		System.out.println("Quantidade de caracteres do nome: " + nome.length());
+		System.out.println("Quantidade de caracteres do curso: " + curso.length());
+
+		System.out.println("Nome em maiúscula: " + nome.toUpperCase());
+		System.out.println("Nome em minúsculas: " + nome.toLowerCase());
+		System.out.println("\n ");
+		System.out.println("Curso em maiúsculas:" + curso.toUpperCase());
+		System.out.println("Curso em maiúsculas:" + curso.toLowerCase());
+		System.out.println("\n ");
+		System.out.println("Primeira letra do nome: " + nome.charAt(0));
+		System.out.println("Última letra do nome: " + nome.charAt(nome.length() - 1));
+		System.out.println("\n--------------------------------------------------");
+		System.out.println("\nIndicadores\n");
+		System.out.println("Maior de idade: " + MaiorIdade);
+		System.out.println("Estuda mais de 20 horas por semana: " + EstudoSemana);
+		System.out.println("Nota suficiente para aprovação: " + NotaSuficiente);
+		System.out.println("Resolveu mais de 5 exercícios: " + ExerciciosResolvido);
+		System.out.println("Possui mais de 5 matérias: " + QtdMaterias);
+		System.out.println("Aluno dedicado: " + AlunoDedicado);
+		System.out.println("Aluno muito ativo: " + AlunoAtivo);
+		System.out.println("Necessita aumentar os estudos: " + EstudoBaixo);
+		System.out.println("Possui bom desempenho geral: " + DesempenhoGeral);
+		System.out.println("--------------------------------------------------");
+		System.out.println("\nClassificação\n");
+		System.out.println("Situação da prova: " + Resultado);
+		System.out.println("Nível de dedicação: " + Dedicacao );
+		System.out.println("Desempenho geral: " + DesempenhoGeral );
+
+	}
+}
