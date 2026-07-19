@@ -52,7 +52,6 @@ Inicialmente, o sistema solicitará ao usuário as seguintes informações:
 * Quantidade de matérias
 * Quantidade de exercícios resolvidos
 * Quantidade de vídeos assistidos
-* Nota da última prova
 
 > **Observação:** Todos os valores numéricos serão informados inicialmente como **String** e posteriormente convertidos para seus respectivos tipos utilizando Wrappers.
 
@@ -84,7 +83,7 @@ Serão exibidas as seguintes informações:
 * Quantidade de matérias
 * Quantidade de exercícios resolvidos
 * Quantidade de vídeos assistidos
-* Nota da última prova
+* Resultado da prova:
 
 Todos esses cálculos serão realizados utilizando operadores aritméticos.
 
@@ -117,9 +116,9 @@ Em seguida, o sistema criará indicadores utilizando operadores relacionais e op
 Alguns exemplos:
 
 * O aluno é maior de idade?
-* Estuda mais de 20 horas por semana?
+* Estuda mais de 20 horas por semana? 
 * A nota é suficiente para aprovação?
-* Resolveu mais de 50 exercícios?
+* Resolveu mais de 5 exercícios?
 * Possui mais de 5 matérias?
 
 Também serão criados indicadores compostos utilizando operadores lógicos (`&&`, `||` e `!`), como:
@@ -128,7 +127,6 @@ Também serão criados indicadores compostos utilizando operadores lógicos (`&&
 * Aluno muito ativo.
 * Necessita aumentar os estudos.
 * Possui bom desempenho geral.
-* Cumpriu a meta semanal.
 
 Todos esses indicadores apresentarão valores booleanos (`true` ou `false`).
 
@@ -143,8 +141,6 @@ Exemplos:
 * Situação acadêmica
 * Nível de dedicação
 * Desempenho geral
-* Meta semanal
-* Categoria do aluno
 
 ---
 
@@ -174,7 +170,7 @@ Horas de estudo por mês:
 Quantidade de matérias:
 Quantidade de exercícios resolvidos:
 Quantidade de vídeos assistidos:
-Nota da última prova:
+Nota da prova:
 
 --------------------------------------------------
 
@@ -199,24 +195,21 @@ Primeira letra do nome:
 Maior de idade:
 Estuda mais de 20 horas por semana:
 Nota suficiente para aprovação:
-Resolveu mais de 50 exercícios:
+Resolveu mais de 5 exercícios:
 Possui mais de 5 matérias:
 
 Aluno dedicado:
 Aluno muito ativo:
 Necessita aumentar os estudos:
 Possui bom desempenho geral:
-Cumpriu a meta semanal:
 
 --------------------------------------------------
 
 🏆 CLASSIFICAÇÃO
 
-Situação acadêmica:
+Situação da prova:
 Nível de dedicação:
 Desempenho geral:
-Meta semanal:
-Categoria do aluno:
 
 ==================================================
 ```
