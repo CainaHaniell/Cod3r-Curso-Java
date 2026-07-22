@@ -1,0 +1,15 @@
+package Controle;
+
+public class Ex01DesafioIf {
+	public static void main(String[] args) {
+		double nota = 1.3;
+		
+		if(nota >= 9.0);
+		{
+			System.out.println("Quadro de honra!");
+			System.out.println("Você é fera!");
+		}
+		//Desafio proporcionado pelo o professor porque o aluno tirando 1.3 ainda imprime 
+		// O problema está no ponto e virgula, pois mostra que finalizou o sistema e depois mostra as strings
+	}
+}
