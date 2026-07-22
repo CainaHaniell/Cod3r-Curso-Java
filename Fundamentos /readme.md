@@ -5,8 +5,8 @@ Aqui estão os primeiros passos com Java, entendendo como o código funciona e c
 
 **📅 Registro de Estudo:**
 * **Início:** 20/05/2026
-* **Conclusão:** 
-* **Aulas Abordadas:** 0 a 50
+* **Conclusão:** 22/07/2026
+* **Aulas Abordadas:** 0 a 17
 * **Exercícios / Desafios:** 0 a 7
   
 ---
