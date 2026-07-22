@@ -1,0 +1,21 @@
+package Controle;
+
+import java.util.Scanner;
+
+public class Aula02IfElse {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Informe um númro");
+		String valor = entrada.nextLine();
+		
+		int numero = Integer.parseInt(valor);
+		
+		if (numero % 2 ==0) {
+			System.out.println("Numero par");
+		} else {
+			System.out.println("Numero Impar");
+		}
+		
+	}
+}
